@@ -10,3 +10,39 @@
 function vowels(str) {}
 
 module.exports = vowels;
+
+// function vowels(str) {
+//   const vowels = ["a","e","i","o","u"];
+//   const split = str.toLowerCase().split("");
+//   let count = 0;
+//   split.forEach(letter => {
+//     vowels.forEach((vLetter => {
+//       if(letter === vLetter){
+//         count ++;
+//       }
+//     }))
+//   })
+//   return count;
+// }
+
+//solution 2
+// function vowels(str) {
+//   const vowels = ["a","e","i","o","u"];
+//   const letters = str.toLowerCase().split('');
+//   let counter = 0;
+
+//   for (let character of letters) {
+//     for (let vowel of vowels) {
+//       if (character === vowel) {
+//         counter ++
+//       }
+//     }
+//   }
+//    return counter;
+//  }
+
+//solution 3
+// function vowels(str) {
+//   const matches = str.match(/[aeiou]/gi);
+//   return matches ? matches.length : 0;
+//  }
